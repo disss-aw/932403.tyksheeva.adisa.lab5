@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--для подстраивания под ширину экрана-->
+    <title>О себе - Космический энтузиаст</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .avatar {
+            border: 4px solid var(--color-accent);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);  
+        }
+    </style>
+</head>
+<body>
+    <div class="stars-container" style="position: relative;">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+    <div class="theme-control">
+        <button id="theme-toggle" type="button">
+            Включить светлую тему
+        </button>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#skills">Навыки</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#objects">Объекты</a></li>
+            <li><a href="#facts">Факты</a></li>
+            <li><a href="#contact">Связаться</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Адиса Тыкшеева</h1>
+        <p class="intro">Космический энтузиаст и астроном-любитель</p>
+        <img src="images/avatar.jpg" alt="Моё фото" width="200" height="200" class="avatar">
+    </header>
+
+    <main>
+        <section id="skills">
+            <h2>Навыки</h2>
+            <ul>
+                <li>Работа с телескопом</li>
+                <li>3D-моделирование космических объектов</li>
+                <li>Наблюдение за небесными телами</li>
+                <li>Фотографирование космоса</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Проекты</h2>
+            <ol>
+                <li>Миссия Voyager - исследование внешних планет</li>
+                <li>Телескоп Hubble - фотографии далёких галактик</li>
+                <li>Марсоход Perseverance - поиск жизни на Марсе</li>
+                <li>МКС - Международная космическая станция</li>
+            </ol>
+        </section>
+
+        <section id="objects">
+            <h2>Объекты для наблюдения</h2>
+            <div class="object-controls">
+                <button id="add-object-btn" type="button">
+                    Добавить объект
+                </button>
+
+                <button id="toggle-objects-btn" type="button">
+                    Скрыть объекты
+                </button>
+            </div>
+
+            <div class="cards" id="objects-list">
+                <article class="card">
+                    <h3>Сириус</h3>
+                    <p>Тип: Звезда</p>
+                    <p>Созвездие: Большой Пёс</p>
+                    <p>Яркость: −1,46 m</p>
+                    <button class="delete-object-btn" type="button">
+                        Удалить
+                    </button>
+                </article>
+
+                <article class="card">
+                    <h3>Вега</h3>
+                    <p>Тип: Звезда</p>
+                    <p>Созвездие: Лира</p>
+                    <p>Яркость: 0,03 m</p>
+                    <button class="delete-object-btn" type="button">
+                        Удалить
+                    </button>
+                </article>
+
+                <article class="card">
+                    <h3>Полярная звезда</h3>
+                    <p>Тип: Звезда</p>
+                    <p>Созвездие: Малая Медведица</p>
+                    <p>Яркость: 1,98 m</p>
+                    <button class="delete-object-btn" type="button">
+                        Удалить
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+
+        <section id="facts">
+            <h2>Космические факты</h2>
+            <div class="dashboard">
+                <article class="fact">
+                    <span class="fact-icon" aria-hidden="true">⭐</span> <!--размер задаётся css(fact-icon)-->
+                    <p class="fact-number">88</p>
+                    <p>созвездий выделено на небе</p>
+                </article>
+                <article class="fact">
+                    <span class="fact-icon" aria-hidden="true">☀️</span> <!--можно не озвучивать программами экранного доступа-->
+                    <p class="fact-number">8 мин</p>
+                    <p>идёт свет от Солнца до Земли</p>
+                </article>
+                <article class="fact">
+                    <span class="fact-icon" aria-hidden="true">🛰️</span>
+                    <p class="fact-number">400 км</p>
+                    <p>примерная высота орбиты МКС</p>
+                </article>
+                <article class="fact">
+                    <span class="fact-icon" aria-hidden="true">🔭</span>
+                    <p class="fact-number">1990</p>
+                    <p>год запуска телескопа Hubble</p>
+                </article>
+                <article class="fact">
+                    <span class="fact-icon" aria-hidden="true">🚀</span>
+                    <p class="fact-number">1977</p>
+                    <p>год запуска зондов Voyager</p>
+                </article>
+                <article class="fact">
+                    <span class="fact-icon" aria-hidden="true">🌕</span>
+                    <p class="fact-number">384 400 км</p>
+                    <p>среднее расстояние до Луны</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Связаться со мной</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Любимое созвездие</h3>
+        <p>
+            <strong>Орион</strong> - самое узнаваемое созвездие на ночном небе.
+            Его легко найти по трём ярким звёздам, образующим пояс охотника.
+        </p>
+        <p>
+            Подробнее о космических миссиях можно почитать на сайте
+            <a href="https://www.nasa.gov" target="_blank" rel="noopener">NASA</a>.
+        </p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Адиса Тыкшеева. Группа 932403</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
